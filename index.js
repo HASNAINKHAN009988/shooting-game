@@ -132,9 +132,9 @@ function init() {
 }
 
 setInterval(() => {
-    enemyspeed += 0.1;
+    enemyspeed += 0.1 * (score / 1000 + 1);
     console.log("Enemy Speed:", enemyspeed);
-}, 5000);
+}, 1000);
 
 function spawnEnemies() {
     setInterval(() => {
